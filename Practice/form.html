@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        form {
+            border: 6px double black;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        h1{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body><h1>Registration Form</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="first_name" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br><br>
+            <label>Age:</label>
+            <input type="number" name="age" required><br><br>
+             <label>D.O.B:</label>
+            <input type="number" name="dob" required><br><br>
+             <label>Month of Admission</label><br>
+            <input type="number" name="year" required><br><br>
+             <label>Year of 10th pass:</label><br>
+            <input type="year" name="year" required><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+             <label>Qualification:</label>
+            <input type="text" name="qualify" required><br><br>
+            <label>Branch:</label>
+            <input type="text" name="branch" required><br><br>
+            <label>Category</label>
+            <select name="country" required>
+                <option value="">Select</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="gen">GEN</option>
+                <option value="obc">OBC</option>
+            </select><br><br>
+           <label for="rangeSlider">Select a Range: </label>
+<input type="range"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+

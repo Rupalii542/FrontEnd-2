@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div {
+            background-color: aqua;
+            display: block;
+        }
+
+        span {
+            background-color: blueviolet;
+            display: inline;
+            width: 100;
+            /* does not have any affect of width */
+        }
+
+        button {
+            background-color: brown;
+            display: inline-block;
+            width: 100%;
+            /*Change width*/
+        }
+
+        .container {
+            border: 3px solid green;
+            height:90vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .flexx{
+            height: 40px;
+            width:30px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Div</div>
+    <br>
+    <span>Span</span>
+    <br>
+    <button>Button</button>
+    <div class="container">
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    <div class="flexx">Flex</div>
+    </div>
+    <!-- flex - used for 1-D (vertical or horizontal) -->
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navigation Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #navigation {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border: solid red;
+      top: 50px;
+      position: sticky;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div id="navigation">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Latest</a>
+    </nav>
+  </div>
+
+  <div class="box"></div>
+</body>
+</html>

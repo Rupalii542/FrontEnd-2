@@ -1,0 +1,86 @@
+<!-- https://maps.app.goo.gl/88fGhmmNDnN11MoY6 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Media Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .media-section {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      grid-template-columns: 1fr;
+    }
+    .media-section video {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+    .media-section audio {
+      width: 100%;
+      display: none; 
+    }
+    .media-section iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    .media-section object {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #aaa;
+    }
+    @media (min-width: 768px) {
+      .media-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .media-section audio {
+        display: block; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="media-section">
+    <div>
+      <h2>Project Showcase</h2>
+      <video controls loop muted poster="thumbnail.avif" width="100%">
+        <source src="video.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div>
+      <h2>Background Music</h2>
+      <audio autoplay loop muted>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div>
+      <h2>Our Office Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.04976086555!2d77.1024909!3d28.7040592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce373edb2d35d%3A0xdaa8eab3b77efb95!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1627740541507!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+    <div>
+      <h2>Download CHO</h2>
+      <object data="Circular_20250627161014_Cho_Dbms-24cse0209.pdf" type="application/pdf">
+        <p>Your browser doesn’t support PDFs.
+          <a href="Circular_20250627161014_Cho_Dbms-24cse0209.pdf" download>Click here to download</a>.</p>
+      </object>
+    </div>
+
+  </section>
+
+</body>
+</html>

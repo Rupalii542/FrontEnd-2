@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discovery Land - Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+    
+    header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      height: 80vh;
+      background-image: url("image.png"); /* replace with your large hero image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .gallery-row {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery-row img {
+      width: 33.33%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .label-row {
+      display: flex;
+      gap: 10px;
+      padding: 0 20px 20px 20px;
+      text-align: center;
+    }
+
+    .label-row div {
+      width: 33.33%;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-row, .label-row {
+        flex-direction: column;
+      }
+
+      .gallery-row img, .label-row div {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Discovery Land Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">About DLC</a></li>
+        <li><a href="#">Our Worlds</a></li>
+        <li><a href="#">Experiences</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Gallery</h1>
+  </section>
+
+  <div class="gallery-row">
+    <img src="Screenshot 2025-07-07 151134.png" alt="Skiing">
+    <img src="Screenshot 2025-07-07 151238.png" alt="Golfing">
+    <img src="Screenshot 2025-07-07 151325.png" alt="Massage">
+  </div>
+
+  <div class="label-row">
+    <div>Skiing</div>
+    <div>Golfing</div>
+    <div>Massage</div>
+  </div>
+
+</body>
+</html>

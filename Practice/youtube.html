@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            border-right: 1px solid #ddd;
+            padding: 10px;
+            position: fixed;
+        }
+        .menu-item {
+            padding: 10px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu-item:hover {
+            background-color: #e5e5e5;
+        }
+        .sign-in-section {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .sign-in-button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #e5e5e5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .main {
+            margin-left: 240px;
+            padding: 20px;
+        }
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .search-message {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-item"><b>YouTube</b></div>
+        <div class="menu-item">Home</div>
+        <div class="menu-item">Shorts</div>
+        <div class="menu-item">Subscriptions</div>
+        <div class="menu-item">You</div>
+        <div class="menu-item">History</div>
+        <div class="menu-item">Playlist</div>
+        <div class="sign-in-section">
+            Sign in to like videos, comment, and subscribe.
+            <br>
+            <a href="#" class="sign-in-button">Sign in</a>
+        </div>
+        <h2>Explore</h2>
+        <div class="menu-item">Shopping</div>
+        <div class="menu-item">Music</div>
+        <div class="menu-item">Movies</div>
+        <div class="menu-item">Live</div>
+        <div class="menu-item">Gaming</div>
+        <div class="menu-item">News</div>
+    </div>
+    <div class="main">
+        <input type="text" class="search-box" placeholder="Search">
+        <div class="search-message">
+            Try searching to get started
+</body>
+</html>
